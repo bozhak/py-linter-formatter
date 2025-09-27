@@ -50,7 +50,7 @@ def format_linter_report(linter_report: dict) -> list:
                             } for result in value
                         ],
                     "path": key,
-                    "status": "passed" if not linter_report else "failed"
+                    "status": "passed" if not linter_report else "failed
                 } for key, value in list(linter_report.items())[1:]
             ]
         )
